@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/02436f5c0c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./main.css">
+    <title>Artem Kuznetsov</title>
+</head>
+<body>
+    <div class="main__container">
+        <header class="header">
+            <div class="header__content">
+                <div class="header__logo">
+                    <img src="images/logo.png" alt="logo" class="header__logo-img">
+                </div>
+                <nav class="header__navbar navbar" id="nav-menu">
+                    <ul class="navbar__list">
+                        <li class="navbar__item">
+                            <a href="#about" class="navbar__link" id="about-link">About</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#projects" class="navbar__link" id="projects-link">Projects</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#contacts" class="navbar__link" id="contacts-link">Contacts</a>
+                        </li>
+                    </ul>
+                    <i class="fa-solid fa-xmark header__close-btn" id="close-menu"></i>
+                </nav>
+                <i class="fa-solid fa-bars header__toggle-menu" id="show-menu"></i>
+            </div>
+        </header>
+        <section class="main__content content">
+            <div class="content__info">
+                <h1 class="content__title">Welcome.</h1>
+                <div class="content__text">My name is Artem Kuznetsov. I'm front-end developer.</div>
+                <div class="content__links">
+                    <a href="https://github.com/arqaDev" class="content__icon-link"><i class="fa-brands fa-github content__info-icon"></i></a>
+                    <a href="https://www.linkedin.com/in/%D0%B0%D1%80%D1%82%D0%B5%D0%BC-%D0%BA%D1%83%D0%B7%D0%BD%D0%B5%D1%86%D0%BE%D0%B2-676302259/" class="content__icon-link"><i class="fa-brands fa-linkedin content__info-icon"></i></a>
+                </div>
+            </div>
+            <div class="content__img">
+                <img src="images/profile_photo.jpeg" alt="profile_photo" class="content__profile-img">
+            </div>
+        </section>
+    </div> 
+    <section class="main__about content-box">
+        <h2 class="content-box__title title" id="about">About me</h2>
+        <div class="content-box__block">
+            <div class="content-box__info">
+                <div class="content-box__subtitle subtitle">
+                    <div class="content-box__text">
+                        I've been building the web for over 6 months, and I know a lot of web development technologies and I'm not going to stop there.
+                        Before that I made features with Python, sites with Django and made parsing of sites.
+                        The ability to build essentially whatever you want has always captivated me, and always will.
+                        <br/>
+                        <br/>
+                        I feel that design and engineering should live harmoneously together. 
+                        Maybe my design skills are lame, but i'm working hard on it right now.
+                        My strength lies in being a generalist and a hardworking person.
+                    </div>   
+                </div>
+                <div class="content-box__skills-list">
+                    <div class="content-box__hard-skills hard-skills">
+                        <i class="fa-brands fa-html5 hard-skills__logo"></i>
+                        <i class="fa-brands fa-css3-alt hard-skills__logo"></i>
+                        <i class="fa-brands fa-node-js hard-skills__logo"></i>
+                        <i class="fa-brands fa-js hard-skills__logo"></i>
+                        <i class="fa-brands fa-react hard-skills__logo"></i>
+                        <i class="fa-brands fa-vuejs hard-skills__logo"></i>
+                        <i class="fa-brands fa-sass hard-skills__logo"></i>
+                        <i class="fa-brands fa-python hard-skills__logo"></i>
+                        <img src="images/django.png" alt="django" class="hard-skills__logo">
+                        <img src="images/typescript.png" alt="typescript" class="hard-skills__logo">
+                        <img src="images/nextjs.png" alt="nextjs" class="hard-skills__logo">
+                        <img src="images/mysql.png" alt="mysql" class="hard-skills__logo">
+                        <i class="fa-brands fa-figma hard-skills__logo"></i>
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </section>
+    <section class="main__projects content-box">
+        <h2 class="content-box__title title" id="projects">Projects</h2>
+        <div class="content-box__block">
+            <div class="main__projects-list">
+                <div class="main__projects-item">
+                    <a href="https://react-movies-app.onrender.com/" class="main__projects-link">
+                        <img src="images/movies-app.jpg" alt="movies-img" class="main__img">
+                        <div class="main__img-title">
+                            <span class="main__img-text">Movies App</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="main__projects-item">
+                    <a href="https://arqadev.github.io/products-app/" class="main__projects-link">
+                        <img src="images/products-app.jpg" alt="products-img" class="main__img">
+                        <div class="main__img-title">
+                            <span class="main__img-text">Products App</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="main__projects-item">
+                    <a href="https://idyllic-parfait-a54395.netlify.app/" class="main__projects-link">
+                        <img src="images/todo-app.jpg" alt="todo-img" class="main__img">
+                        <div class="main__img-title">
+                            <span class="main__img-text">Todo App</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main__contacts content-box">
+        <h2 class="content-box__title title" id="contacts">Contacts</h2>
+        <div class="content-box__block">
+            <form class="content-box__message-form message-form" id="message-form">
+                <div class="message-form__field message-form__field_main-info">
+                    <div class="message-form__name">
+                        <label for="name" class="message-form__label label">Your Name</label>
+                        <input type="text" class="message-form__name-input message-form_input" placeholder="Enter your name" id="name"/>
+                    </div>
+                    <div class="message-form__email">
+                        <label for="email" class="message-form__label label">Email Address</label>
+                        <input type="text" class="message-form__email-input message-form_input" placeholder="Enter your email address" id="email"/>
+                    </div>
+                </div>
+                <div class="message-form__field">
+                    <div class="message-form__message">
+                        <label for="message" class="message-form__label label">Your Message</label>
+                        <textarea class="message-form__message-input message-form_input" name="message" id="message" cols="70" rows="7"></textarea>
+                    </div>
+                </div>           
+                <button type="submit" class="message-form__send-btn">Send</button>
+            </form>
+        </div>
+    </section>
+    <script src="./script.js" defer></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+</html>
