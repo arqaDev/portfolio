@@ -31,7 +31,7 @@ function sendMessage(e) {
         SecureToken: "3d48748e-98f8-4015-b4e9-ff63cdd53664",
         To: "arqa1996@gmail.com",
         From: email.value,
-        Subject: "Contact Form",
+        Subject: name.value,
         Body: message.value,
     }).then((message) => alert(message));
 }
