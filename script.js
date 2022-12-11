@@ -14,6 +14,7 @@ showMenu.addEventListener("click", openMenu);
 about.addEventListener("click", hideMenu);
 projects.addEventListener("click", hideMenu);
 contacts.addEventListener("click", hideMenu);
+form.addEventListener("submit", sendMessage);
 
 function hideMenu() {
     menu.classList.remove("show");
@@ -23,10 +24,14 @@ function openMenu() {
     menu.classList.add("show");
 }
 
-// Email.send({
-//     SecureToken: "C973D7AD-F097-4B95-91F4-40ABC5567812",
-//     To: "them@website.com",
-//     From: "you@isp.com",
-//     Subject: "This is the subject",
-//     Body: "And this is the body",
-// }).then((message) => alert(message));
+function sendMessage(e) {
+    e.preventDefault();
+
+    Email.send({
+        SecureToken: "3d48748e-98f8-4015-b4e9-ff63cdd53664",
+        To: "arqa1996@gmail.com",
+        From: email.value,
+        Subject: "Contact Form",
+        Body: message.value,
+    }).then((message) => alert(message));
+}
