@@ -8,13 +8,14 @@ const form = document.getElementById("form");
 const name = document.getElementById("name");
 const email = document.getElementById("email");
 const message = document.getElementById("message");
+const sendButton = document.getElementById("send-btn");
 
 closeMenu.addEventListener("click", hideMenu);
 showMenu.addEventListener("click", openMenu);
 about.addEventListener("click", hideMenu);
 projects.addEventListener("click", hideMenu);
 contacts.addEventListener("click", hideMenu);
-form.addEventListener("submit", sendMessage);
+sendButton.addEventListener("click", sendMessage);
 
 function hideMenu() {
     menu.classList.remove("show");
