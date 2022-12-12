@@ -41,7 +41,6 @@ function sendMessage(e) {
         Host: "smtp.gmail.com",
         Username: "arqa1996@gmail.com",
         Password: "aoznxnlrdauudwvt",
-        SecureToken: "3d48748e-98f8-4015-b4e9-ff63cdd53664",
         To: "arqa1996@gmail.com",
         From: email.value,
         Subject: name.value,
