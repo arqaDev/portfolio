@@ -27,23 +27,12 @@ function sendMessage(e) {
     const name = document.getElementById("name");
     const email = document.getElementById("email");
     const message = document.getElementById("message");
-    let body =
-        "name: " +
-        name.value +
-        "<br/> email: " +
-        email.value +
-        "<br/> subject: " +
-        name.value +
-        "<br/> message: " +
-        message.value;
 
-    Email.send({
-        Host: "smtp.elasticemail.com",
-        Username: "arqa1996@gmail.com",
-        Password: "aoznxnlrdauudwvt",
-        To: "arqa1996@gmail.com",
-        From: email.value,
-        Subject: name.value,
-        Body: body,
-    }).then((message) => alert(message));
+    emailjs
+        .send("service_5vlucvi", "template_167hajk", {
+            name: name.value,
+            email: email.value,
+            message: message.value,
+        })
+        .then((res) => alert("success " + res.status));
 }
