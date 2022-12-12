@@ -34,5 +34,5 @@ function sendMessage(e) {
             email: email.value,
             message: message.value,
         })
-        .then((res) => alert("success " + res.status));
+        .then((res) => alert("The message is sent!"));
 }
