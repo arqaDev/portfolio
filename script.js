@@ -38,7 +38,7 @@ function sendMessage(e) {
         message.value;
 
     Email.send({
-        Host: "smtp.gmail.com",
+        Host: "smtp.elasticemail.com",
         Username: "arqa1996@gmail.com",
         Password: "aoznxnlrdauudwvt",
         To: "arqa1996@gmail.com",
