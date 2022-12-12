@@ -5,9 +5,6 @@ const projects = document.getElementById("projects-link");
 const contacts = document.getElementById("contacts-link");
 const menu = document.getElementById("nav-menu");
 const form = document.getElementById("form");
-const name = document.getElementById("name");
-const email = document.getElementById("email");
-const message = document.getElementById("message");
 const sendButton = document.getElementById("send-btn");
 
 closeMenu.addEventListener("click", hideMenu);
@@ -27,12 +24,27 @@ function openMenu() {
 
 function sendMessage(e) {
     e.preventDefault();
+    const name = document.getElementById("name");
+    const email = document.getElementById("email");
+    const message = document.getElementById("message");
+    let body =
+        "name: " +
+        name.value +
+        "<br/> email: " +
+        email.value +
+        "<br/> subject: " +
+        name.value +
+        "<br/> message: " +
+        message.value;
 
     Email.send({
+        Host: "smtp.gmail.com",
+        Username: "arqa1996@gmail.com",
+        Password: "aoznxnlrdauudwvt",
         SecureToken: "3d48748e-98f8-4015-b4e9-ff63cdd53664",
         To: "arqa1996@gmail.com",
         From: email.value,
         Subject: name.value,
-        Body: message.value,
+        Body: body,
     }).then((message) => alert(message));
 }
